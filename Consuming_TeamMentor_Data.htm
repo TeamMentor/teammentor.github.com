@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>TeamMentor help: Consuming TeamMentor Data<</title>    
+	<style type="text/css">
+      body 
+      {
+        padding: 10px;
+      }      
+    </style>
+</head>
+<body>
+    <h2>
+		Consuming TeamMentor Data</h2>
+	<p>
+		TeamMentor was designed from the ground up to facilitate the easy access and 
+		manipulation of its data.</p>
+	<p>
+		There are number of ways do it by:</p>
+	<ul>
+		<li>Accessing the Webservices directly</li>
+		<li>Using the webapp Control Panel WebServices GUI</li>
+		<li>Using the webapp Javascript API (which wraps the WebServices)</li>
+		<li>Directly consuming the server side DLLs (using or nor the WebServices methods)</li>
+		<li>Directly manipulating the XML files (either at the master XML Git repository or 
+			at a local install/fork/clone)</li>
+		<li>Using the O2 Platform and its multiple TeamMentor data manipulation and viewing 
+			GUIs</li>
+	</ul>
+	<h3>
+		Accessing the Webservices directly</h3>
+	<p>
+		Although all data traffic goes though the WebServices layer, there is currenlty 
+		only one .NET WebService *.asmx file. This makes it easy to consume and 
+		centralizes all exposed methods in one location.</p>
+	<p>
+		This file can be found at the&nbsp; /aspx_pages/TM_WebServices.asmx .For 
+		example on the current test servers you will find it at:</p>
+	<ul>
+		<li><a href="http://50.18.82.146:8081/aspx_pages/TM_WebServices.asmx">
+			http://50.18.82.146:8081/aspx_pages/TM_WebServices.asmx</a>&nbsp; (OWASP 
+			Library)</li>
+		<li><a href="http://50.18.82.146:8082/aspx_pages/TM_WebServices.asmx">
+			http://50.18.82.146:8082/aspx_pages/TM_WebServices.asmx</a>&nbsp; (SI Library)</li>
+	</ul>
+	<p>
+		To get the WSDL from this webservice just append ?wsdl to the url (i.e. 
+		/aspx_pages/TM_WebServices.asmx?wsdl)</p>
+	<h3>
+		Using the webapp Control Panel WebServices GUI</h3>
+	<p>
+		...todo...</p>
+	<h3>
+		Using the webapp Javascript API</h3>
+	<p>
+		<em>(which wraps the WebServices)</em></p>
+	<p>
+		<em>...todo...</em></p>
+	<h3>
+		Directly consuming the server side .Net DLLs 
+	</h3>
+	<p>
+		<em(using or nor the WebServices methods)</em></p>
+	<p>
+		<em>...todo...</em></p>
+	<h3>
+		Directly manipulating the XML files  
+	</h3>
+	<p>
+		<em>(either at the master XML Git repository or at a local install/fork/clone)</em></p>
+	<p>
+		<em>...todo...</em></p>
+	<h3>
+		Using the O2 Platform 
+	</h3>
+	<p>
+		<em>...and its multiple TeamMentor data manipulation and viewing 
+			GUIs<br />
+		<br />
+		...todo...</em></p>
+	<h2>
+		TeamMentor Architecture</h2>
+	<p>
+		There are 3 key layers of TeamMentor</p>
+	<ul>
+		<li>The Xml Files</li>
+		<li>The WebService layer</li>
+		<li>The Javascript driven GUI</li>
+	</ul>
+
+</body>
+</html>
